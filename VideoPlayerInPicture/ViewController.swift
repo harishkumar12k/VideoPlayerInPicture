@@ -11,6 +11,7 @@ import AVKit
 import SDWebImage
 
 class ViewController: UIViewController, UIGestureRecognizerDelegate {
+    @IBOutlet var gg: UIView!
     
     @IBOutlet weak var videoView: UIView!
     @IBOutlet var PlayAndPause: UIButton!
@@ -273,7 +274,6 @@ extension ViewController{
         VideosTableView.register(nib, forCellReuseIdentifier: "VideosTableViewCell")
         VideosTableView.dataSource = self
         VideosTableView.delegate = self
-        VideosTableView.translatesAutoresizingMaskIntoConstraints = true
         VideosTableView.estimatedRowHeight = 50
         VideosTableView.rowHeight = UITableView.automaticDimension
     }

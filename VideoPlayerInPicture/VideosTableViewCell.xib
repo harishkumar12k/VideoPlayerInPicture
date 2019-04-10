@@ -44,6 +44,7 @@
                     <constraint firstItem="tVi-PH-j9B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="hyN-uJ-M8n"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="Thumbnail" destination="tVi-PH-j9B" id="eTa-6y-I08"/>
