@@ -122,16 +122,15 @@
 		027F14AB225C9FFE008D73E5 /* VideoPlayerInPicture */ = {
 			isa = PBXGroup;
 			children = (
+				02FE90FC225D830E005977E6 /* Model */,
+				02FE90FD225D831C005977E6 /* View */,
+				02FE90FE225D8330005977E6 /* Controller */,
 				027F14AC225C9FFE008D73E5 /* AppDelegate.swift */,
-				027F14AE225C9FFE008D73E5 /* ViewController.swift */,
 				027F14B0225C9FFE008D73E5 /* Main.storyboard */,
 				027F14B6225C9FFF008D73E5 /* Assets.xcassets */,
 				027F14B8225C9FFF008D73E5 /* LaunchScreen.storyboard */,
 				027F14BB225C9FFF008D73E5 /* Info.plist */,
 				027F14B3225C9FFF008D73E5 /* VideoPlayerInPicture.xcdatamodeld */,
-				027F14DF225CE4A2008D73E5 /* VideoInfo.swift */,
-				027F14E1225CEFA2008D73E5 /* VideosTableViewCell.swift */,
-				027F14E2225CEFA2008D73E5 /* VideosTableViewCell.xib */,
 			);
 			path = VideoPlayerInPicture;
 			sourceTree = "<group>";
@@ -152,6 +151,31 @@
 				027F14D1225CA000008D73E5 /* Info.plist */,
 			);
 			path = VideoPlayerInPictureUITests;
+			sourceTree = "<group>";
+		};
+		02FE90FC225D830E005977E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				027F14DF225CE4A2008D73E5 /* VideoInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02FE90FD225D831C005977E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				027F14E1225CEFA2008D73E5 /* VideosTableViewCell.swift */,
+				027F14E2225CEFA2008D73E5 /* VideosTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02FE90FE225D8330005977E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				027F14AE225C9FFE008D73E5 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		BC6C22C398948FD9B86A4E97 /* Frameworks */ = {

@@ -11,7 +11,6 @@ import AVKit
 import SDWebImage
 
 class ViewController: UIViewController, UIGestureRecognizerDelegate {
-    @IBOutlet var gg: UIView!
     
     @IBOutlet weak var videoView: UIView!
     @IBOutlet var PlayAndPause: UIButton!

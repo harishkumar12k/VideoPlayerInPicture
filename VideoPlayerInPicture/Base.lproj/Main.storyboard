@@ -226,7 +226,6 @@
                         <outlet property="TotalTimeLabel" destination="7k3-Gz-peQ" id="08v-G5-6Ew"/>
                         <outlet property="VideoLoader" destination="uF7-lU-yIX" id="t54-Ww-KQb"/>
                         <outlet property="VideosTableView" destination="drk-1F-XkG" id="NNS-KC-dJz"/>
-                        <outlet property="gg" destination="hqE-0f-aiN" id="y8q-Na-CLA"/>
                         <outlet property="pictureInPictureButton" destination="oGv-Yx-qJc" id="m9u-0b-DXJ"/>
                         <outlet property="videoView" destination="kAG-x1-00w" id="xjz-G9-M8v"/>
                     </connections>
