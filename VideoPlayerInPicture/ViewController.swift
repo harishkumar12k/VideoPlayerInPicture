@@ -87,6 +87,7 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         if player.timeControlStatus == .playing{
             pauseVideo()
         }
+        CloseButtonView.alpha = 0
         self.videoView.frame = self.BackgroundVideoView.frame
     }
     
@@ -123,10 +124,12 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
     
     //Possible only for isPictureInPictureSupported is not suppotred
     @objc func draggedView(_ sender:UIPanGestureRecognizer){
-        self.view.bringSubviewToFront(videoView)
-        let translation = sender.translation(in: self.view)
-        videoView.center = CGPoint(x: videoView.center.x + translation.x, y: videoView.center.y + translation.y)
-        sender.setTranslation(CGPoint.zero, in: self.view)
+        if player.timeControlStatus == .playing{
+            self.view.bringSubviewToFront(videoView)
+            let translation = sender.translation(in: self.view)
+            videoView.center = CGPoint(x: videoView.center.x + translation.x, y: videoView.center.y + translation.y)
+            sender.setTranslation(CGPoint.zero, in: self.view)
+        }
     }
     
 }
@@ -162,13 +165,17 @@ extension ViewController: AVPictureInPictureControllerDelegate{
     //Hide OR Show Controllers
     @objc func updateVideoController(){
         if (shouldPlayerControllerVisible) {
-            CloseButtonView.alpha = 0
+            if self.videoView.frame != self.BackgroundVideoView.frame {
+                CloseButtonView.alpha = 0
+            }
             UIView.animate(withDuration: 0.5, delay: 0.2, options: .curveEaseOut, animations: {
                 self.PlayAndPauseView.alpha = 0.0
                 self.DurationView.alpha = 0.0
             }, completion: nil)
         } else {
-            CloseButtonView.alpha = 1
+            if self.videoView.frame != self.BackgroundVideoView.frame {
+                CloseButtonView.alpha = 1
+            }
             UIView.animate(withDuration: 0.5, delay: 0.2, options: .curveEaseOut, animations: {
                 self.PlayAndPauseView.alpha = 0.6
                 self.DurationView.alpha = 0.7

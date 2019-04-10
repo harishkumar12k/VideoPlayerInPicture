@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--InPicture Video Player-->
         <scene sceneID="9JZ-1k-DpN">
             <objects>
                 <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ijx-6v-eLK" customClass="ViewController" customModule="VideoPlayerInPicture" customModuleProvider="target" sceneMemberID="viewController">
@@ -212,7 +212,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zta-uP-zMI"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ep2-Lg-9lq"/>
+                    <navigationItem key="navigationItem" title="InPicture Video Player" id="Ep2-Lg-9lq"/>
                     <connections>
                         <outlet property="BackgroundVideoView" destination="5az-9O-5Cd" id="hSi-Td-lPx"/>
                         <outlet property="CloseButton" destination="7eI-lw-OCS" id="Rmv-8R-EPf"/>
